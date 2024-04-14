@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yugan's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .project {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .project h3 {
+            color: #343a40;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .project p {
+            color: #6c757d;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .article {
+            margin-bottom: 30px;
+        }
+
+        .article h3 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .article p {
+            margin-bottom: 10px;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list li {
+            margin-bottom: 10px;
+        }
+
+        .links-list a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-user-circle icon"></i> Yugan's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a onclick="scrollToSection('about')"><i class="fas fa-info-circle icon"></i> About</a></li>
+                <li><a onclick="scrollToSection('education')"><i class="fas fa-graduation-cap icon"></i> Education</a></li>
+                <li><a onclick="scrollToSection('skills')"><i class="fas fa-tools icon"></i> Skills</a></li>
+                <li><a onclick="scrollToSection('links')"><i class="fas fa-link icon"></i> Links</a></li>
+                <li><a onclick="scrollToSection('certifications')"><i class="fas fa-certificate icon"></i> Certifications</a></li>
+                <li><a onclick="scrollToSection('experience')"><i class="fas fa-briefcase icon"></i> Experience</a></li>
+                <li><a onclick="scrollToSection('projects')"><i class="fas fa-project-diagram icon"></i> Projects</a></li>
+                <li><a onclick="scrollToSection('awards')"><i class="fas fa-award icon"></i> Awards</a></li>
+                <li><a onclick="scrollToSection('publications')"><i class="fas fa-book icon"></i> Publications</a></li>
+                <li><a onclick="scrollToSection('contact')"><i class="fas fa-envelope icon"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title"><i class="fas fa-info-circle icon"></i> About Me</h2>
+        <div class="article">
+            <h3>Yugan Nithish Kumar T</h3>
+            <p>+91 6379988996 | <a href="mailto:yugannkt@gmail.com">yugannkt@gmail.com</a></p>
+        </div>
+        <div class="article">
+            <h3>Education</h3>
+            <ul class="list">
+                <li><strong>R.M.D ENGINEERING COLLEGE</strong> - Bachelor of Engineering in Electronics and Communication Engineering, Cumulative GPA: 8.95 / 10.0</li>
+                <li><strong>VELAMMAL SCHOOL</strong> - Intermediate, March 2020</li>
+            </ul>
+        </div>
+        <div class="article">
+            <h3>Skills</h3>
+            <ul class="list">
+                <li><strong>Languages:</strong> C++, ROS, C, Java</li>
+                <li><strong>Tools:</strong> RestAPI, GIT</li>
+                <li><strong>Platforms:</strong> Linux, Windows</li>
+                <li><strong>Tech Skills:</strong> RPA, DevOps</li>
+                <li><strong>Cloud Platforms:</strong> AWS, GCP</li>
+            </ul>
+        </div>
+        <div class="article">
+            <h3>Links</h3>
+            <ul class="links-list">
+                <li><a href="https://www.linkedin.com/in/YuganNithishKumar">LinkedIn</a></li>
+                <li><a href="https://github.com/Yugan">GitHub</a></li>
+                <li><a href="https://www.researchgate.net/profile/Yugan">ResearchGate</a></li>
+                <li><a href="https://www.youtube.com/ProjectHackChannel">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="article">
+            <h3>Certifications</h3>
+            <ul class="list">
+                <li>Oracle Cloud Infrastructure Certified Associate</li>
+                <li>CCNA: Introduction to Networks</li>
+                <li>UiPath Academy RPA Citizen Developer Foundation Training</li>
+                <li>Learning Industrial Automation</li>
+                <li>Problem Solving through Programming in C NPTEL</li>
+                <li>edX Verified Certificate for Introduction to Linux edX</li>
+                <li>Certified Ethical Hacker Prompt InfoTech</li>
+                <li>Technical Support Fundamentals Coursera | Google</li>
+                <li>Python Foundation Certification</li>
+                <li>SP Robotics Works CODEY (ADVANCE LEVEL)</li>
+                <li>Clean Data in SQL using MySQL Workbench - Infosys SpringBoard</li>
+                <li>MATLAB Onramp</li>
+            </ul>
+        </div>
+        <div class="article">
+            <h3>Experience</h3>
+            <ul class="list">
+                <li><strong>TATA ELXSI</strong> - Trainee, JAN 2024</li>
+                <li><strong>TIDEN MOBILITY PVT. LTD.</strong> - Engineering Intern, Aug 2022 – Mar 2023, Anna University
+                    <ul>
+                        <li>Worked on Domain of electric mobility, specifically focusing on motor drive, controller, and overall electronics testing.</li>
+                        <li>Skills: Designing, Testing, and Troubleshooting various motor driver and control systems.</li>
+                    </ul>
+                </li>
+                <li><strong>INFOSYS</strong> - Intern, Feb 2022 – May 2022
+                    <ul>
+                        <li>Designed user(admin)friendly frontend which displays graphical reports by monitoring the health of the Unix server.</li>
+                        <li>Skills: PHP, MySQL, HTML5, CSS, XAMPP, Linux, Shell Scripting JavaScript.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title"><i class="fas fa-project-diagram icon"></i> Projects</h2>
+        <div class="project">
+            <h3>DRONE DOC+ - MEDICAL DRONE</h3>
+            <p>Creating a network of drone-based ambulances to help rural communities to avoid the difficulties of using traditional ambulance services in emergencies.</p>
+        </div>
+        <div class="project">
+            <h3>IV BACKFLOW PREVENTION DEVICE FOR NURSE ASSISTANCE SYSTEM</h3>
+            <p>Developed a prototype to prevent backflow during IV. This project is planned to integrate it with the present nurse assistant systems. Soon it will be made into a product.</p>
+        </div>
+        <div class="project">
+            <h3>INLINE PIPE INSPECTION ROBOT FOR CRACK DETECTION</h3>
+            <p>This project proposes a design for a pipeline inspection robot that can detect various pipe cracks internally using a camera at a very low cost.</p>
+        </div>
+    </section>
+
+    <section id="awards">
+        <h2 class="section-title"><i class="fas fa-award icon"></i> Awards</h2>
+        <ul class="list">
+            <li>Best Student Award 2023 By ISTE</li>
+            <li>Smart India Hackathon - Winner</li>
+            <li>2023 Poster Presentation – 2nd Prize</li>
+            <li>2022 Circuit Debugging Contest - Winner</li>
+            <li>2022 Paper Presentation Contest - Winner</li>
+            <li>2022 Technovation’22 - Winner Issued by ISTE STUDENT CHAPTER and INSTITUTION’S INNOVATION COUNCIL</li>
+            <li>Pitch Contest - Winner</li>
+            <li>Community Prize - EW Project Challenge 2021</li>
+            <li>2021 BEST PAPER AWARD Issued by 7 th National Conference on Advancements in Communication Computing and Electronics Technology [ACCET-2021]</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2 class="section-title"><i class="fas fa-book icon"></i> Publications</h2>
+        <ul class="list">
+            <li>
+                <h3>Smart city survey, challenge for the city future.</h3>
+                <p>Publisher: Joy Academy</p>
+            </li>
+            <li>
+                <h3>IV backflow prevention device - medical assistance system.</h3>
+                <p>Journal Of Polymer Composites, in press.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title"><i class="fas fa-envelope icon"></i> Contact Me</h2>
+        <p><i class="fas fa-envelope icon"></i> Email: yugannkt@gmail.com</p>
+        <p><i class="fas fa-phone icon"></i> Phone: +91 6379988996</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Yugan Nithish Kumar T</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+    
+</body>
+</html>
